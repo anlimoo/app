@@ -1,0 +1,18 @@
+<view class='mert-msg'>
+  <block wx:for="{{mertdata}}" wx:key="item"> 
+    <view class='mert-list'>
+      <navigator url='/pages/merchants/merchants?id={{item.id}}'>
+        <view class='all' index="{{index}}" bindtap="next">
+          <view class='mert-photo'>
+          <image class='mert-pic' mode='aspectFill' src='{{item.imgid}}'/>
+        </view>
+        <view class='mert-txt'>
+          <view class="title">{{item.message}}</view>
+          <view class="extro">{{item.price}}</view>
+          <view class="recommend-val">推荐指数：{{item.value}}</view>
+        </view>
+        </view>
+      </navigator>
+    </view>
+  </block>
+</view>
