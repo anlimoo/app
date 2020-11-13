@@ -1,0 +1,37 @@
+.mert-list{
+  margin-top:10px;
+  padding:10px;
+}
+.all{
+  border-style:solid;
+    border-width:1px;
+    border-radius: 25px;
+  border-color:#c0bdbd;
+  padding:10px;
+  margin-left: 10px;
+}
+.mert-pic{
+  display: block;
+  margin: auto;
+  width:260px;
+  border-bottom: 2px #c0bdbd;
+}
+.mert-txt{
+  padding-left: 12px;
+}
+.title{
+  text-indent: 20rpx;
+  text-align: left;
+  font-size: small;
+  font-family: cursive;
+  font-weight: 600;
+}
+.extro{
+  color: #f20c59;
+  font-weight: 700;
+  font-size: 32rpx;
+}
+.recommend-val{
+  font-size: medium;
+  font-weight: 700;
+}
