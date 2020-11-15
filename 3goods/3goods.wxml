@@ -1,0 +1,35 @@
+<!-- banner -->
+<swiper indicator-dots="{{indicatorDots}}" autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}">
+  <block wx:for="{{imgUrls}}">
+    <swiper-item>
+      <image src="{{item}}" data-src="{{item}}" bindtap="previewImage"></image>
+    </swiper-item>
+  </block>
+</swiper>
+<scroll-view scroll-y="true">
+  <view class="detail">
+    <text class="title">LANCOME兰蔻小黑瓶精华肌底液</text>
+    <text class="price">￥500</text>
+  </view>
+  <view class="separate"></view>
+  <!-- sku选择 -->
+  <text>商品详情</text>
+  <view class="separate"></view>
+  <text>商品评价</text>
+  <text class="text-remark">好评率：</text>
+  <view class="separate"></view>
+
+  <block wx:for-items="{{detailImg}}" wx:key="name">
+    <image class="image_detail" src="{{item}}" />
+  </block>
+  <view class="temp"></view>
+</scroll-view>
+<!-- 底部悬浮栏 -->
+<view class="detail-nav">
+ 
+  <view class="line_nav"></view>
+  <image class="save " src="{{isClick?'../../images/shoucang.png':'../../images/no-shoucang.png'}}" bindtap="haveSave"></image>
+   <text class="saveText">{{isClick?'已收藏':'收藏'}}</text>
+  <button class="button-green" bindtap="todelay" formType="submit">延迟购买</button>
+  <button class="button-red" bindtap="immeBuy" formType="submit">立即购买</button>
+</view>
