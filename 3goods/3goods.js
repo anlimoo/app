@@ -22,7 +22,8 @@ Page({
     isClick: false,
     jobStorage: [],
     jobId: ''
-
+   //好评率
+    probability:"20%",
 
   },
   //预览图片
