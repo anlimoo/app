@@ -1,37 +1,190 @@
-.mert-list{
-  margin-top:10px;
-  padding:10px;
+page {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
 }
-.all{
+/* 直接设置swiper属性 */
+swiper {
+  height: 500rpx;
+}
+swiper-item image {
+  width: 100%;
+  height: 100%;
+}
+.detail {
+  background-color: #fff;
+  box-shadow: 5px 5px 5px #888888;
   border-style:solid;
-    border-width:1px;
-    border-radius: 25px;
-  border-color:#c0bdbd;
-  padding:10px;
-  margin-left: 10px;
+  border-width:1px;
+  border-radius: 25px;
+border-color:#c0bdbd;
+padding:10px;
+margin-left: 10px;
+margin-right: 10px;
+  display: flex;
+  flex-direction: column;
+  margin-top: 10rpx;
+  margin-bottom: 10rpx;
 }
-.mert-pic{
-  display: block;
-  margin: auto;
-  width:260px;
-  border-bottom: 2px #c0bdbd;
+.title {
+  font-size: 35rpx;
+  color: black;
+  text-align: justify;
+  font-weight: 700;
 }
-.mert-txt{
-  padding-left: 12px;
-}
-.title{
-  text-indent: 20rpx;
-  text-align: left;
-  font-size: small;
-  font-family: cursive;
+.price {
+  color: red;
+  font-size: 40rpx;
   font-weight: 600;
 }
-.extro{
-  color: #f20c59;
-  font-weight: 700;
-  font-size: 32rpx;
+/* 折线图 */
+.tu{
+  background-color: #fff;
+  box-shadow: 5px 5px 5px #888888;
+  border-style:solid;
+  border-width:1px;
+  border-radius: 25px;
+border-color:#c0bdbd;
+padding:10px;
+margin-left: 10px;
+margin-right: 10px;
+  display: flex;
+  flex-direction: column;
+  margin-top: 10rpx;
+  margin-bottom: 10rpx;
 }
-.recommend-val{
-  font-size: medium;
-  font-weight: 700;
+.history{
+  font-size: 35rpx;
+  color: black;
+  text-align: justify;
+  /* font-weight: 700; */
+}
+.gragh {
+  background-color: rgb(10, 10, 10);
+}
+.canvas-view{
+  height: 100%;
+  display: flex;
+  align-items: center;
+  margin-top: 48rpx;
+}
+.canvas{
+  width: 100%;
+  height: 640rpx;
+}
+/* 下栏 */
+.line_flag {
+  width: 80rpx;
+  height: 1rpx;
+  display: inline-block;
+  margin: 20rpx auto;
+  background-color: gainsboro;
+  text-align: center;
+}
+.line {
+  width: 100%;
+  height: 2rpx;
+  display: inline-block;
+  margin: 20rpx 0rpx;
+  background-color: gainsboro;
+  text-align: center;
+}
+.detail-nav {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  float: left;
+  background-color: #fff;
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  z-index: 1;
+  width: 100%;
+  height: 80rpx;
+}
+.button-green {
+  border-style:solid;
+  border-width:1px;
+  border-radius: 25px;
+border-color:#faad07;
+/* padding:10px;
+margin-left: 10px;
+margin-right: 10px; */
+  display: flex;
+  flex-direction: column;
+  /* margin-top: 10rpx;
+  margin-bottom: 10rpx; */
+  color: #faad07;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 40rpx;
+  border-radius: 0rpx;
+  width: 50%;
+  height: 80%;
+  line-height: 100rpx;
+
+}
+.button-red {
+  border-style:solid;
+  border-width:1px;
+  border-radius: 25px;
+border-color:#37ee12;
+padding:10px;
+margin-left: 10px;
+margin-right: 10px;
+  display: flex;
+  flex-direction: column;
+  margin-top: 10rpx;
+  margin-bottom: 10rpx;
+  color: #37ee12;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 40rpx;
+  border-radius: 0rpx;
+  width: 50%;
+  height: 80%;
+  line-height: 100rpx;
+}
+.image_detail {
+  width: 80%;
+}
+/* button {
+  color: white;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 40rpx;
+  border-radius: 0rpx;
+  width: 50%;
+  height: 100%;
+  line-height: 100rpx;
+} */
+.detail-nav image {
+  width: 70rpx;
+  height: 50rpx;
+  margin: 0rpx 20rpx;
+}
+.line_nav {
+  width: 5rpx;
+  height: 100%;
+  background-color: gainsboro;
+}
+/* 占位 */
+.temp {
+  height: 100rpx;
+}
+text {
+  display: block;
+  height: 60rpx;
+  line-height: 60rpx;
+  font-size: 50rpx;
+  margin: 10rpx;
+}
+.text-remark {
+  display: block;
+  font-size: 30rpx;
+  margin: 10rpx;
+  color: #fca80b;
 }
