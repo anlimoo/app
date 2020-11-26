@@ -1,1 +1,25 @@
 
+<view class="header">
+  <image class="bg_ware" src="https://moyv.top/wechat/images/bg_wave.gif"></image>
+</view>
+
+
+<view class="phone">
+  <view class="none"></view>
+    <view class="itemView">手机号：</view>
+<view class="item">
+    <input class="input" name="userName" placeholder="请输入手机号"
+    bindinput ="userNameInput"/>
+  </view>
+</view>
+
+
+<view class="df" style="padding:24rpx 0;">
+  <view class="fs26">请选择最大延迟期限：</view>
+  <picker mode="multiSelector" bindchange="bindMultiPickerChange" bindcolumnchange="bindMultiPickerColumnChange" value="{{multiIndex}}" range="{{multiArray}}">
+     <input class="tim" value='{{time}}' name="dd_time" placeholder='选择时间' />
+  </picker>
+</view>
+<view class="viewName">
+  <button class="loginBtn" bindtap="loginBtnClick">确认</button>
+</view>
