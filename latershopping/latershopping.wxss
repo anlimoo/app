@@ -1,1 +1,75 @@
+.header {
+  position: relative;
+  height:300rpx;
+  background: linear-gradient(to bottom, #56ccf2, #2f80ed);
+}
 
+.bg_ware {
+  position: absolute;
+  left: 0;
+  bottom: -2rpx;
+  width: 100%;
+  mix-blend-mode: screen;
+  height: 120rpx;
+}
+
+page{
+  background-color: rgb(236, 236, 234);
+}
+.phone{
+  height: 90px;
+  margin-top: 0px;
+  background-color: #fff;
+  display: block;
+}
+.none{
+  height:5px;
+}
+.itemView{
+  font-size: 15px;
+  font-weight: 700;
+  margin-left: 10px;
+  margin-top: 10px;
+}
+.item{
+	font-size: 13px;
+  text-align: left;
+  border-style:solid;
+  border-width:1px;
+border-color:#c0bdbd;
+padding:3px;
+margin-left: 10px;
+margin-top: 5px;
+margin-right: 10px;
+}
+.df{
+  margin-top: 10px;
+  background-color: #fff;
+}
+.fs26{
+	font-size: 15px;
+  font-weight: 700;
+  margin-left: 10px;
+  margin-top: 10px;
+}
+.loginBtn{
+  background-color: #08d312;
+  color: #fff;
+  word-spacing: 30px;
+  align-self: center;
+  margin-top: 10px;
+  width: 60px;
+	height:20px;
+	
+}
+.tim{
+	font-size: 13px;
+  text-align: left;
+  border-style:solid;
+  border-width:1px;
+border-color:#c0bdbd;
+padding:3px;
+margin-left: 10px;
+margin-top: 5px;
+margin-right: 10px;
+}
